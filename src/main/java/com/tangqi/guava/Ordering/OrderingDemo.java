@@ -2,7 +2,6 @@ package com.tangqi.guava.Ordering;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Ordering;
-import com.sun.istack.internal.Nullable;
 
 /**
  * @Auhtor: tangqi@otasim.com
@@ -13,7 +12,7 @@ import com.sun.istack.internal.Nullable;
 public class OrderingDemo {
 
     class Foo {
-        @Nullable String sortedBy;
+        String sortedBy;
         int notSortedBy;
     }
 
