@@ -5,17 +5,16 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 
 //注解方式注入bean，名字是helloServer
 @Service("helloServer")
 public class HelloServer {
-    private static Logger log = Logger.getLogger(HelloServer.class);
+    //private static Logger log = Logger.getLogger(HelloServer.class);
     /**
      * 服务端监听的端口地址
      */
@@ -41,7 +40,7 @@ public class HelloServer {
              // 监听服务器关闭监听
              f.channel().closeFuture().sync();
 
-             log.info("###########################################");
+            // log.info("###########################################");
              // 可以简写为
              /* b.bind(portNumber).sync().channel().closeFuture().sync(); */
          } finally {
