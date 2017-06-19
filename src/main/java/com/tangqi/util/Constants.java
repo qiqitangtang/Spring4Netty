@@ -1,6 +1,9 @@
 package com.tangqi.util;
 
 
+import com.google.common.base.Charsets;
+
+import java.nio.charset.Charset;
 
 /**
  * Created by wfcfan on 2016/8/29.

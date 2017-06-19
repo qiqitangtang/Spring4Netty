@@ -1,6 +1,11 @@
 package com.tangqi;
 
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.tangqi.util.Constants;
+import org.springframework.http.converter.json.GsonHttpMessageConverter;
+
 /**
  * Created by wfcfan on 2016/8/29.
  */

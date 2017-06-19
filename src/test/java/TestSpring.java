@@ -1,10 +1,11 @@
-import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.logging.Logger;
+
 public class TestSpring {
 	
-	private static Logger log = Logger.getLogger(TestSpring.class);
+	private static Logger log = Logger.getLogger("testSpring");
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
